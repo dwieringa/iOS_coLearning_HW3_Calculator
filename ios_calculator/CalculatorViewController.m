@@ -51,6 +51,11 @@ NSString *valueAsString(double value)
         self.operand2IsResult = NO;
     }
     
+    // if operand2 is initial 0, replace it (don't let numbers start with one or more 0's
+    if ([self.operand2.text isEqualToString:@"0"]) {
+        self.operand2.text = @"";
+    }
+    
     // append digit to operand
     self.operand2.text = [self.operand2.text stringByAppendingString:sender.currentTitle];
 }
