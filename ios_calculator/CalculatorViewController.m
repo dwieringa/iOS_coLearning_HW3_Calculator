@@ -62,6 +62,12 @@ NSString *valueAsString(double value)
 
 - (IBAction)decimalPress:(UIButton *)sender
 {
+    // if operand2 is showing the result of the last operation, don't allow it to be appended...replace it
+    if (self.operand2IsResult) {
+        self.operand2.text = @"0";
+        self.operand2IsResult = NO;
+    }
+
     if ([self.operand2.text rangeOfString:@"."].location == NSNotFound) {
         self.operand2.text = [self.operand2.text stringByAppendingString:sender.currentTitle];
     }
@@ -69,7 +75,7 @@ NSString *valueAsString(double value)
 
 - (IBAction)plusMinusPress:(id)sender
 {
-    if (![self.operand2.text isEqualToString:@""]) {
+    if (![self.operand2.text isEqualToString:@"0"] && ![self.operand2.text isEqualToString:@""]) {
         NSString *firstChar = [self.operand2.text substringToIndex:1];
         if ([firstChar isEqualToString:@"-"]) {
             self.operand2.text = [self.operand2.text substringFromIndex:1];
@@ -82,7 +88,6 @@ NSString *valueAsString(double value)
 - (IBAction)percentPress:(UIButton *)sender {
     double value = [self.operand2.text doubleValue];
     self.operand2.text = valueAsString(value/100);
-
 }
 
 - (IBAction)operatorPress:(UIButton *)sender
