@@ -1,19 +1,21 @@
 //
-//  wk4AppDelegate.m
+//  CalcAppDelegate.m
 //  ios_calculator
 //
 //  Created by David Wieringa on 5/17/14.
 //  Copyright (c) 2014 Userwise Solutions. All rights reserved.
 //
 
-#import "wk4AppDelegate.h"
+#import "CalcAppDelegate.h"
+#import "CalculatorViewController.h"
 
-@implementation wk4AppDelegate
+@implementation CalcAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    CalculatorViewController *calcViewController = [[CalculatorViewController alloc] init];
+    self.window.rootViewController = calcViewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

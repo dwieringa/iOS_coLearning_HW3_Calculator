@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "wk4AppDelegate.h"
+#import "CalcAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([wk4AppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([CalcAppDelegate class]));
     }
 }

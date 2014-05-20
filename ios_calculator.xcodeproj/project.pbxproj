@@ -12,13 +12,16 @@
 		55CAD8C91928231D00B6A9D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CAD8C81928231D00B6A9D2 /* UIKit.framework */; };
 		55CAD8CF1928231D00B6A9D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55CAD8CD1928231D00B6A9D2 /* InfoPlist.strings */; };
 		55CAD8D11928231D00B6A9D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD8D01928231D00B6A9D2 /* main.m */; };
-		55CAD8D51928231D00B6A9D2 /* wk4AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD8D41928231D00B6A9D2 /* wk4AppDelegate.m */; };
+		55CAD8D51928231D00B6A9D2 /* CalcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD8D41928231D00B6A9D2 /* CalcAppDelegate.m */; };
 		55CAD8D71928231D00B6A9D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CAD8D61928231D00B6A9D2 /* Images.xcassets */; };
 		55CAD8DE1928231D00B6A9D2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CAD8DD1928231D00B6A9D2 /* XCTest.framework */; };
 		55CAD8DF1928231D00B6A9D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CAD8C41928231D00B6A9D2 /* Foundation.framework */; };
 		55CAD8E01928231D00B6A9D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CAD8C81928231D00B6A9D2 /* UIKit.framework */; };
 		55CAD8E81928231D00B6A9D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55CAD8E61928231D00B6A9D2 /* InfoPlist.strings */; };
 		55CAD8EA1928231D00B6A9D2 /* ios_calculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD8E91928231D00B6A9D2 /* ios_calculatorTests.m */; };
+		55CAD8F6192823F500B6A9D2 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD8F4192823F500B6A9D2 /* CalculatorViewController.m */; };
+		55CAD8F7192823F500B6A9D2 /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CAD8F5192823F500B6A9D2 /* CalculatorViewController.xib */; };
+		55CAD8FD192AF55500B6A9D2 /* CalculatorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CAD8FC192AF55500B6A9D2 /* CalculatorButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +43,19 @@
 		55CAD8CE1928231D00B6A9D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		55CAD8D01928231D00B6A9D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		55CAD8D21928231D00B6A9D2 /* ios_calculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios_calculator-Prefix.pch"; sourceTree = "<group>"; };
-		55CAD8D31928231D00B6A9D2 /* wk4AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wk4AppDelegate.h; sourceTree = "<group>"; };
-		55CAD8D41928231D00B6A9D2 /* wk4AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wk4AppDelegate.m; sourceTree = "<group>"; };
+		55CAD8D31928231D00B6A9D2 /* CalcAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalcAppDelegate.h; sourceTree = "<group>"; };
+		55CAD8D41928231D00B6A9D2 /* CalcAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalcAppDelegate.m; sourceTree = "<group>"; };
 		55CAD8D61928231D00B6A9D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		55CAD8DC1928231D00B6A9D2 /* ios_calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_calculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CAD8DD1928231D00B6A9D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		55CAD8E51928231D00B6A9D2 /* ios_calculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios_calculatorTests-Info.plist"; sourceTree = "<group>"; };
 		55CAD8E71928231D00B6A9D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		55CAD8E91928231D00B6A9D2 /* ios_calculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_calculatorTests.m; sourceTree = "<group>"; };
+		55CAD8F3192823F500B6A9D2 /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		55CAD8F4192823F500B6A9D2 /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		55CAD8F5192823F500B6A9D2 /* CalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
+		55CAD8FB192AF55500B6A9D2 /* CalculatorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculatorButton.h; path = ../CalculatorButton.h; sourceTree = "<group>"; };
+		55CAD8FC192AF55500B6A9D2 /* CalculatorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalculatorButton.m; path = ../CalculatorButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +115,13 @@
 		55CAD8CA1928231D00B6A9D2 /* ios_calculator */ = {
 			isa = PBXGroup;
 			children = (
-				55CAD8D31928231D00B6A9D2 /* wk4AppDelegate.h */,
-				55CAD8D41928231D00B6A9D2 /* wk4AppDelegate.m */,
+				55CAD8D31928231D00B6A9D2 /* CalcAppDelegate.h */,
+				55CAD8D41928231D00B6A9D2 /* CalcAppDelegate.m */,
+				55CAD8F3192823F500B6A9D2 /* CalculatorViewController.h */,
+				55CAD8F4192823F500B6A9D2 /* CalculatorViewController.m */,
+				55CAD8F5192823F500B6A9D2 /* CalculatorViewController.xib */,
+				55CAD8FB192AF55500B6A9D2 /* CalculatorButton.h */,
+				55CAD8FC192AF55500B6A9D2 /* CalculatorButton.m */,
 				55CAD8D61928231D00B6A9D2 /* Images.xcassets */,
 				55CAD8CB1928231D00B6A9D2 /* Supporting Files */,
 			);
@@ -221,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55CAD8CF1928231D00B6A9D2 /* InfoPlist.strings in Resources */,
+				55CAD8F7192823F500B6A9D2 /* CalculatorViewController.xib in Resources */,
 				55CAD8D71928231D00B6A9D2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55CAD8D11928231D00B6A9D2 /* main.m in Sources */,
-				55CAD8D51928231D00B6A9D2 /* wk4AppDelegate.m in Sources */,
+				55CAD8D51928231D00B6A9D2 /* CalcAppDelegate.m in Sources */,
+				55CAD8F6192823F500B6A9D2 /* CalculatorViewController.m in Sources */,
+				55CAD8FD192AF55500B6A9D2 /* CalculatorButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

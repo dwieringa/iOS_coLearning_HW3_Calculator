@@ -1,5 +1,5 @@
 //
-//  wk4AppDelegate.h
+//  CalcAppDelegate.h
 //  ios_calculator
 //
 //  Created by David Wieringa on 5/17/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface wk4AppDelegate : UIResponder <UIApplicationDelegate>
+@interface CalcAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
